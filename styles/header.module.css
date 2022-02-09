@@ -1,0 +1,17 @@
+.header {
+    background-image: url('../assets/img/header-bg.jpg');
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .navMenu {
+    width: 90%;
+    height: 5em;
+    margin-top: 20px;
+}
