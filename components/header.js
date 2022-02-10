@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/header.module.css'
+import Link from 'next/link'
+import Router from 'next/router'
 
-
-class Header extends React.Component {
+export class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -55,7 +56,6 @@ class Header extends React.Component {
         }
     }
     render() {
-
         return (
             <div className='fixed z-50 bg-black text-white left-0 right-0 h-[5em] flex items-center justify-center'>
                 <div className={`flex items-center justify-center gap-28 ${styles.navMenu} w-full`}>
@@ -72,7 +72,7 @@ class Header extends React.Component {
                         }`}>
                             <i className='bi bi-x-lg text-[24px]' onClick={this.toggleMenu}></i>
                         </button>
-                        <nav className='p-4 hover:text-white cursor-pointer'>Home</nav>
+                        <nav onClick={()=> Router.push('/')} className='p-4 hover:text-white cursor-pointer'>Home</nav>
                         <nav className='p-4 hover:text-white cursor-pointer'>Gallery</nav>
                         <nav className='p-4 hover:text-white cursor-pointer'>Products</nav>
                         <nav className='p-4 hover:text-white cursor-pointer'>Review</nav>

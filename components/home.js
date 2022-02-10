@@ -1,4 +1,5 @@
 import React from "react";
+import Router from "next/router";
 
 class HomeDrone extends React.Component {
     constructor() {
@@ -15,7 +16,7 @@ class HomeDrone extends React.Component {
                     Look up the sky and beautiful world with simple navigation<br />
                     Just record anmd get a lot memories to share, lighty and fast like a lightning
                 </div>
-                <button className='bg-blue text-white w-40 h-10 rounded-full hover:bg-dark-blue text-[18px]'>
+                <button onClick={()=> Router.push('/detail')} className='bg-blue text-white w-40 h-10 rounded-full hover:bg-dark-blue text-[18px]'>
                     GET NOW
                 </button>
             </div>
