@@ -4,7 +4,14 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            keyframes: {
+                showMenu: {
+                    '0%': { transform: 'translate(-100%)' },
+                    '100%': { transform: 'translate(0)' },
+                }
+            }
+        },
         colors: {
             transparent: 'transparent',
             current: 'currentColor',

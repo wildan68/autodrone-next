@@ -63,9 +63,9 @@ class Header extends React.Component {
                         <Image src={require('../assets/img/logo.png')} alt='logo' />
                     </div> 
                     <div className={`flex relative gap-24 max-w-full h-auto text-gray ${
-                        this.state.navMenu ? 'md:flex md:flex-col md:gap-[10px] md:items-center md:justify-center' : 'md:hidden'
+                        this.state.navMenu ? 'md:flex md:flex-col md:gap-[10px] md:items-center md:justify-center md:animate-[showMenu_0.5s_ease]' : 'md:hidden'
                         } ${
-                            this.state.isMobile ? 'md:bg-black md:fixed md:top-0 md:right-0 md:left-0 md:bottom-0' : 'bg-transparent'
+                            this.state.isMobile ? 'md:bg-black md:fixed md:z-20 md:top-0 md:right-0 md:left-0 md:bottom-0' : 'bg-transparent'
                         }`}>
                         <button className={`${
                             this.state.isMobile ? 'md:fixed md:top-[24px] md:right-[24px]' : 'hidden'
