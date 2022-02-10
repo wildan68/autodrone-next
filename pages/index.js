@@ -1,4 +1,5 @@
 import Header from '../components/header'
+import HomeDrone from '../components/home'
 import Feature from '../components/feature'
 import Benefit from '../components/benefit'
 import Product from '../components/product'
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <div>
       <Header/>
+      <HomeDrone/>
       <Feature/>
       <Benefit/>
       <Product/>

@@ -57,15 +57,15 @@ class Header extends React.Component {
     render() {
 
         return (
-            <div className={styles.header}>
-                <div className={`flex items-center justify-center gap-28 ${styles.navMenu}`}>
+            <div className='fixed z-50 bg-black text-white left-0 right-0 h-[5em] flex items-center justify-center'>
+                <div className={`flex items-center justify-center gap-28 ${styles.navMenu} w-full`}>
                     <div className='flex w-14 h-14 items-center justify-center md:flex-1'>
-                        <Image src={require('../assets/img/logo.png')} alt='logo' />
+                        <img src={'img/logo.png'} className='w-[48px]'/>
                     </div> 
                     <div className={`flex relative gap-24 max-w-full h-auto text-gray ${
                         this.state.navMenu ? 'md:flex md:flex-col md:gap-[10px] md:items-center md:justify-center md:animate-[showMenu_0.5s_ease]' : 'md:hidden'
                         } ${
-                            this.state.isMobile ? 'md:bg-black md:fixed md:z-20 md:top-0 md:right-0 md:left-0 md:bottom-0' : 'bg-transparent'
+                            this.state.isMobile ? 'md:bg-black md:fixed md:top-0 md:right-0 md:left-0 md:bottom-0' : 'bg-transparent'
                         }`}>
                         <button className={`${
                             this.state.isMobile ? 'md:fixed md:top-[24px] md:right-[24px]' : 'hidden'
@@ -92,23 +92,11 @@ class Header extends React.Component {
                             <input type='text' placeholder='Search items..' className='p-[10px] outline-none bg-transparent rounded-[8px] focus:border-gray focus:border-[1px]'/>
                         </div>
                     </div>
-                    <div className='hidden md:flex md:flex-1 md:justify-end'>
+                    <div className='hidden md:flex md:flex-1 md:justify-end w-full'>
                         <button className='px-[1em] py-[0.5em] hover:bg-dark-white hover:text-black rounded-[10px]' onClick={this.toggleMenu}>
                             <i className="bi bi-list text-[24px]"></i>
                         </button>
                     </div>
-                </div>
-                <div className='pt-10 flex flex-col gap-[30px] items-center px-[40px]'>
-                    <div className='text-[36px] font-medium text-center'>
-                        Representing Drone Light
-                    </div>
-                    <div className='text-sm text-center text-gray text-[18px]'>
-                        Look up the sky and beautiful world with simple navigation<br />
-                        Just record anmd get a lot memories to share, lighty and fast like a lightning
-                    </div>
-                    <button className='bg-blue text-white w-40 h-10 rounded-full hover:bg-dark-blue text-[18px]'>
-                        GET NOW
-                    </button>
                 </div>
             </div>
         )
