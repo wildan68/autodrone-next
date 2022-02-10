@@ -11,7 +11,7 @@ class Product extends React.Component {
 
     render() {
         const style = {
-            swiper: 'border-[1px] border-gray rounded-[10px] p-[45px] flex flex-col text-center items-center md:h-[800px]',
+            swiper: 'border-[1px] border-gray md:border-none rounded-[10px] p-[45px] flex flex-col text-center items-center md:h-[800px]',
             swiperButton: 'mt-[30px] w-[50%] bg-blue py-[10px] text-white text-[18px] rounded-full hover:dark-blue'
         }
         return (
@@ -25,7 +25,7 @@ class Product extends React.Component {
                         Make every moment flyin operation become unforgettable.
                     </span>
                 </div>
-                <div className='ml-[150px] md:ml-0 w-[90%] overflow-hidden'>
+                <div className='translate-x-[15%] md:translate-x-0 w-[90%] overflow-hidden'>
                     <Swiper slidesPerView={3}
                         spaceBetween={50}
                         direction='vertical'

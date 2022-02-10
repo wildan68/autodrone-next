@@ -86,7 +86,7 @@ class Header extends React.Component {
                                 this.state.search ? 'block' : 'hidden'
                             }
                             ${
-                                !this.state.isMobile ? 'absolute bottom-[-50px] right-0 border-[1px] border-gray' : ''
+                                !this.state.isMobile ? 'absolute bottom-[-80px] right-0 bg-black p-[1em]' : ''
                             }
                         `}>
                             <input type='text' placeholder='Search items..' className='p-[10px] outline-none bg-transparent rounded-[8px] focus:border-gray focus:border-[1px]'/>

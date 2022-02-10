@@ -21,7 +21,7 @@ class Benefit extends React.Component {
                         </span>
                         <div className="flex gap-[50px] flex-wrap justify-center">
                             <div className="flex gap-[5px] flex-col items-center">
-                                <span className="text-[36px] font-[600]">
+                                <span className="text-[36px] md:text-[28px] font-[600]">
                                     4K
                                 </span>
                                 <span className="text-[20px] font-[300] text-center text-gray">
@@ -29,7 +29,7 @@ class Benefit extends React.Component {
                                 </span>
                             </div>
                             <div className="flex gap-[5px] flex-col items-center">
-                                <span className="text-[36px] font-[600]">
+                                <span className="text-[36px] md:text-[28px] font-[600]">
                                     2TB
                                 </span>
                                 <span className="text-[20px] font-[300] text-center text-gray">
@@ -37,7 +37,7 @@ class Benefit extends React.Component {
                                 </span>
                             </div>
                             <div className="flex gap-[5px] flex-col items-center">
-                                <span className="text-[36px] font-[600]">
+                                <span className="text-[36px] md:text-[28px] font-[600]">
                                     60 m/s
                                 </span>
                                 <span className="text-[20px] font-[300] text-center text-gray">
@@ -45,7 +45,7 @@ class Benefit extends React.Component {
                                 </span>
                             </div>
                             <div className="flex gap-[5px] flex-col items-center">
-                                <span className="text-[36px] font-[600]">
+                                <span className="text-[36px] md:text-[28px] font-[600]">
                                     30 mins
                                 </span>
                                 <span className="text-[20px] font-[300] text-center text-gray">

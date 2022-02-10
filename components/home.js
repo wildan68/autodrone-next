@@ -11,7 +11,7 @@ class HomeDrone extends React.Component {
                 <div className='text-[36px] font-medium text-center text-white'>
                     Representing Drone Light
                 </div>
-                <div className='text-sm text-center text-gray text-[18px]'>
+                <div className='text-sm text-center text-gray text-[18px] leading-7'>
                     Look up the sky and beautiful world with simple navigation<br />
                     Just record anmd get a lot memories to share, lighty and fast like a lightning
                 </div>
