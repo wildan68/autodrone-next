@@ -6,7 +6,7 @@ class Feature extends React.Component {
     }
     render() {
         return (
-            <div className="p-4 flex gap-[20px] justify-center md:flex-col">
+            <div className="p-4 flex gap-[20px] justify-center md:flex-col" id="gallery">
                 <div className="w-[660px] h-[660px] flex flex-col pt-[120px] items-center gap-[10px] md:w-full md:h-[460px]
             bg-center bg-no-repeat p-[1em] md:pt-[60px] relative overflow-hidden">
                     <img src={'img/ultra_light.jpg'} className='object-cover w-full h-full absolute top-0 left-0 right-0 hover:scale-125 transition-all ease-in-out' />

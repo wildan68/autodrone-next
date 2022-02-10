@@ -7,7 +7,7 @@ class Testimoni extends React.Component {
 
     render() {
         return (
-            <div className="px-[150px] flex flex-col gap-[80px] py-[5em] md:py-[2em] md:px-[32px]">
+            <div className="px-[150px] flex flex-col gap-[80px] py-[5em] md:py-[2em] md:px-[32px]" id="review">
                 <span className="font-[600] text-[64px] md:text-[36px]">
                     What Our &quot;Pilots<br />Are Saying
                 </span>

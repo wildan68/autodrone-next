@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/header.module.css'
 import Link from 'next/link'
 import Router from 'next/router'
+import { withRouter } from 'next/router'
 
 export class Header extends React.Component {
     constructor(props) {
@@ -12,6 +13,7 @@ export class Header extends React.Component {
             isMobile: false,
             screenWidth: null,
             search: false,
+            path: this.props.router.pathname,
         }
     }
     async componentDidMount() {
@@ -55,6 +57,15 @@ export class Header extends React.Component {
             })
         }
     }
+    onMenu = (to) => {
+        if (this.state.path != '/') {
+            Router.push(`/#${to}`)
+        }
+        else {
+            document.getElementById(to).scrollIntoView()
+            this.toggleMenu()
+        }
+    }
     render() {
         return (
             <div className='fixed z-50 bg-black text-white left-0 right-0 h-[5em] flex items-center justify-center'>
@@ -73,10 +84,10 @@ export class Header extends React.Component {
                             <i className='bi bi-x-lg text-[24px]' onClick={this.toggleMenu}></i>
                         </button>
                         <nav onClick={()=> Router.push('/')} className='p-4 hover:text-white cursor-pointer'>Home</nav>
-                        <nav className='p-4 hover:text-white cursor-pointer'>Gallery</nav>
-                        <nav className='p-4 hover:text-white cursor-pointer'>Products</nav>
-                        <nav className='p-4 hover:text-white cursor-pointer'>Review</nav>
-                        <nav className='p-4 hover:text-white cursor-pointer'>Support</nav>
+                        <nav onClick={()=> this.onMenu('gallery')} className='p-4 hover:text-white cursor-pointer'>Gallery</nav>
+                        <nav onClick={()=> this.onMenu('product')} className='p-4 hover:text-white cursor-pointer'>Products</nav>
+                        <nav onClick={()=> this.onMenu('review')} className='p-4 hover:text-white cursor-pointer'>Review</nav>
+                        <nav onClick={()=> this.onMenu('footer')} className='p-4 hover:text-white cursor-pointer'>Support</nav>
                         <nav className='px-6 py-4 hover:text-white cursor-pointer md:order-first' onClick={this.toggleSearch}>
                             <i className="bi bi-search"></i>
                         </nav>
@@ -103,4 +114,4 @@ export class Header extends React.Component {
     }
 }
 
-export default Header;
+export default withRouter(Header);

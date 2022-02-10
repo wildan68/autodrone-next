@@ -15,7 +15,7 @@ class Product extends React.Component {
             swiperButton: 'mt-[30px] w-[50%] bg-blue py-[10px] text-white text-[18px] rounded-full hover:dark-blue'
         }
         return (
-            <div className="flex flex-col items-center gap-[50px] py-[50px]">
+            <div className="flex flex-col items-center gap-[50px] py-[50px]" id="product">
                 <div className="flex flex-col gap-[15px] text-center">
                     <span className="text-[36px] font-[600]">
                         New Products

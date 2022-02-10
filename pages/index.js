@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Header from '../components/header'
 import HomeDrone from '../components/home'
 import Feature from '../components/feature'
@@ -19,6 +20,9 @@ class Home extends React.Component {
   render() {
     return (
       <div>
+        <Head>
+          <title>Autodrone Wildan Rizky</title>
+        </Head>
         <Header />
         <HomeDrone />
         <Feature />

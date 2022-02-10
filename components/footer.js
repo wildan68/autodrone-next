@@ -6,7 +6,7 @@ class Footer extends React.Component {
     }
     render() {
         return (
-            <div className="bg-black text-white px-[150px] py-[150px] flex gap-[100px] md:flex-col md:px-[33px] md:py-[55px] md:gap-[32px]">
+            <div className="bg-black text-white px-[150px] py-[150px] flex gap-[100px] md:flex-col md:px-[33px] md:py-[55px] md:gap-[32px]" id="footer">
                 <div className="flex flex-col gap-[20px]">
                     <div className="flex items-center gap-[20px]">
                         <img src={'img/logo.png'} /> <span className="font-[600] text-[26px]">autodrone</span>
