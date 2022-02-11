@@ -8,6 +8,7 @@ import Product from '../components/product'
 import Testimoni from '../components/testimoni'
 import Footer from '../components/footer'
 import { withRouter } from 'next/router'
+import AOS from 'aos'
 
 class Home extends React.Component {
   constructor() {
@@ -15,7 +16,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-
+    AOS.init()
   }
   render() {
     return (

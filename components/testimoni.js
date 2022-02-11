@@ -12,7 +12,7 @@ class Testimoni extends React.Component {
                     What Our &quot;Pilots<br />Are Saying
                 </span>
                 <div className="flex gap-[50px] md:flex-col md:items-center">
-                    <div className="w-[347px] h-[250px] rounded-[10px] border-gray border-[1px] p-[30px] flex flex-col gap-[30px]">
+                    <div className="w-[347px] h-[250px] rounded-[10px] border-gray border-[1px] p-[30px] flex flex-col gap-[30px]" data-aos="flip-up">
                         With high resolution camera, picture become clear and beautiful. It&apos;s so easy to operate drone.
                         <div className="flex gap-[30px]">
                             <div className="rounded-full w-[70px] h-[70px] overflow-hidden">
@@ -28,7 +28,7 @@ class Testimoni extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[347px] h-[250px] rounded-[10px] border-gray border-[1px] p-[30px] flex flex-col gap-[30px]">
+                    <div className="w-[347px] h-[250px] rounded-[10px] border-gray border-[1px] p-[30px] flex flex-col gap-[30px]" data-aos="flip-up">
                         Taking high view video become easy and faster. Battery performance really helping for making film
                         <div className="flex gap-[30px]">
                             <div className="rounded-full w-[70px] h-[70px] overflow-hidden">
@@ -44,7 +44,7 @@ class Testimoni extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[347px] h-[250px] rounded-[10px] border-gray border-[1px] p-[30px] flex flex-col gap-[30px]">
+                    <div className="w-[347px] h-[250px] rounded-[10px] border-gray border-[1px] p-[30px] flex flex-col gap-[30px]" data-aos="flip-up">
                         Making video content creator for my trip vlog so powerful and wondeful. Love the video quality
                         <div className="flex gap-[30px]">
                             <div className="rounded-full w-[70px] h-[70px] overflow-hidden">
